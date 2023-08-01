@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/pages/chat_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -70,7 +72,7 @@ class MyHomePage extends StatelessWidget {
         body: const TabBarView(
           children: [
             Placeholder(),
-            Placeholder(),
+            ChatScreen(),
             Placeholder(),
             Placeholder(),
           ],
