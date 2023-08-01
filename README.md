@@ -28,3 +28,11 @@ A new Flutter project.
 ### Whats icons exists in Material Design
 
 - [Material Design Icons](https://fonts.google.com/icons)
+
+### Faker
+
+- [Faker](https://pub.dev/packages/faker)
+
+### Intl
+
+- [Intl](https://pub.dev/packages/intl)
