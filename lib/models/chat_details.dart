@@ -1,9 +1,11 @@
 abstract class ChatData {
   String message;
+  String name;
   DateTime lastSeen;
   String? photoURL;
   int unreadCount;
   ChatData({
+    required this.name,
     required this.message,
     required this.lastSeen,
     this.unreadCount = 0,
@@ -12,10 +14,8 @@ abstract class ChatData {
 }
 
 class PrivateChatDetails extends ChatData {
-  String name;
-
   PrivateChatDetails({
-    required this.name,
+    required super.name,
     required super.message,
     required super.lastSeen,
     super.photoURL,
@@ -35,11 +35,10 @@ class PrivateChatDetails extends ChatData {
 // }
 
 class GroupChatDetails extends ChatData {
-  String groupName;
   String lastMessageSender;
 
   GroupChatDetails({
-    required this.groupName,
+    required super.name,
     required this.lastMessageSender,
     required super.message,
     required super.lastSeen,
