@@ -67,3 +67,8 @@ Note: Some of the msgs should "be sent" by `me`, styling should be as showed in 
 To make the triangles on the sides you need to use [ClipPath]
 
 - Extra - Add the TextField at the bottom
+
+### HomeWork Aug, 14th:
+
+  1. In the `MessageTile` widget, fix the width of the tile to be a min of 40% and a max of 75% of the screen width, depending on the `message` length.
+  2. Try to implment the `ChatInput` widget with all the buttons and text fields.
