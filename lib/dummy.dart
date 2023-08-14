@@ -9,7 +9,7 @@ final List<ChatData> chats = List<ChatData>.generate(
     final bool isGroup = index % 5 == 0;
     if (isGroup) {
       return GroupChatDetails(
-        groupName: faker.company.name(),
+        name: faker.company.name(),
         lastMessageSender: faker.person.firstName(),
         message: faker.lorem.sentence(),
         lastSeen: faker.date.dateTimeBetween(DateTime(2023), DateTime.now()),
