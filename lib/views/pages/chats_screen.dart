@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:j4j_whatsapp_starting_project/dummy.dart';
 import 'package:j4j_whatsapp_starting_project/models/chat_details.dart';
+import 'package:j4j_whatsapp_starting_project/views/pages/single_chat_screen.dart';
 
-class ChatScreen extends StatelessWidget {
-  const ChatScreen({super.key});
+class ChatsScreen extends StatelessWidget {
+  const ChatsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,10 +29,15 @@ class ChatTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String name = chat is PrivateChatDetails
-        ? (chat as PrivateChatDetails).name
-        : (chat as GroupChatDetails).groupName;
+    final String name = chat.name;
     return ListTile(
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => SingleChatScreen(chat: chat),
+            ));
+      },
       title: Text(
         name,
         overflow: TextOverflow.ellipsis,
