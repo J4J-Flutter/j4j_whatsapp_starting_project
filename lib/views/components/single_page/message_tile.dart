@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:j4j_whatsapp_starting_project/models/chat_message.dart';
-import 'package:j4j_whatsapp_starting_project/views/pages/chats_screen.dart';
+import 'package:j4j_whatsapp_starting_project/utils/formats.dart';
 
 class MessageTile extends StatelessWidget {
   const MessageTile({super.key, required this.msg});
@@ -23,6 +23,7 @@ class MessageTile extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            //TODO: show sender name if not sent by me
             Text(msg.message),
             Align(
               alignment: Alignment.bottomRight,
