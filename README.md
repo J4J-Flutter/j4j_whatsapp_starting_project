@@ -71,4 +71,12 @@ To make the triangles on the sides you need to use [ClipPath]
 ### HomeWork Aug, 14th:
 
   1. In the `MessageTile` widget, fix the width of the tile to be a min of 40% and a max of 75% of the screen width, depending on the `message` length.
-  2. Try implementing the `ChatInput`` widget with all the buttons and text fields.
+  2. Try implementing the `ChatInput` widget with all the buttons and text fields.
+  3. Show sender name if not sent by me
+
+### HomeWork Aug, 22th:
+
+  1. Try to build the database schema for the chat app, use `drawio` right here in VSCODE.
+  2. Read about `freezed`; A video was sent earlier today.
+  3. Read what is document DB, and `firestore`.
+  4. Try to convert your schema to `firestore` collections and documents.
